@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfairisplay:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Ecommerce - Tienda</title>
 </head>
-
 <body>
     <header>
-        <h1>Tienda Muebles</h1>
-        <nav>
+        <h1>Tienda <span>Muebles</span></h1>
+        <hr>
+        <nav class="navegacion nav-principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
@@ -22,85 +25,76 @@
         </nav>
     </header>
     <main>
-        <h2>Nuestros Productos</h2>
-        <div>
-            <article>
-                <img src="./img/producto1.jpg" alt="img-p-1">
-                <div>
-                    <h3>Producto 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione numquam architecto
-                        quisquam. Laudantium cum eius quod corporis, labore sequi, quibusdam, pariatur molestiae maxime
-                        doloremque tenetur aliquid non obcaecati fugiat.</p>
-                    <p>$1,000,000.00</p>
-                    <button type="button">AGREGAR AL CARRITO</button>
-                </div>
-            </article>
-        </div>
-        <div>
-            <article>
-                <img src="./img/producto2.jpg" alt="img-p-2">
-                <div>
-                    <h3>Producto 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione numquam architecto
-                        quisquam. Laudantium cum eius quod corporis, labore sequi, quibusdam, pariatur molestiae maxime
-                        doloremque tenetur aliquid non obcaecati fugiat.</p>
-                    <p>$1,000,000.00</p>
-                    <button type="button">AGREGAR AL CARRITO</button>
-                </div>
-            </article>
-            <article>
-                <img src="./img/producto3.jpg" alt="img-p-3">
-                <div>
-                    <h3>Producto 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione numquam architecto
-                        quisquam. Laudantium cum eius quod corporis, labore sequi, quibusdam, pariatur molestiae maxime
-                        doloremque tenetur aliquid non obcaecati fugiat.</p>
-                    <p>$1,000,000.00</p>
-                    <button type="button">AGREGAR AL CARRITO</button>
-                </div>
-            </article>
-        </div>
-        <div>
-            <article>
-                <img src="./img/producto4.jpg" alt="img-p-4">
-                <div>
-                    <h3>Producto 4</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione numquam architecto
-                        quisquam. Laudantium cum eius quod corporis, labore sequi, quibusdam, pariatur molestiae maxime
-                        doloremque tenetur aliquid non obcaecati fugiat.</p>
-                    <p>$1,000,000.00</p>
-                    <button type="button">AGREGAR AL CARRITO</button>
-                </div>
-            </article>
-            <article>
-                <img src="./img/producto5.jpg" alt="img-p-5">
-                <div>
-                    <h3>Producto 5</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione numquam architecto
-                        quisquam. Laudantium cum eius quod corporis, labore sequi, quibusdam, pariatur molestiae maxime
-                        doloremque tenetur aliquid non obcaecati fugiat.</p>
-                    <p>$1,000,000.00</p>
-                    <button type="button">AGREGAR AL CARRITO</button>
-                </div>
-            </article>
-            <article>
-                <img src="./img/producto6.jpg" alt="img-p-6">
-                <div>
-                    <h3>Producto 6</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione numquam architecto
-                        quisquam. Laudantium cum eius quod corporis, labore sequi, quibusdam, pariatur molestiae maxime
-                        doloremque tenetur aliquid non obcaecati fugiat.</p>
-                    <p>$1,000,000.00</p>
-                    <button type="button">AGREGAR AL CARRITO</button>
-                </div>
-            </article>
-        </div>
+        <section class="seccion-nuestros-productos">
+            <h2>Nuestros Productos</h2>
+            <div class="section1">
+                <article class="card-producto">
+                    <img src="./img/producto1.jpg" alt="img-p-1">
+                    <div>
+                        <h3>Producto 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione numquam architecto quisquam. Laudantium cum eius quod corporis, labore sequi, quibusdam.</p>
+                        <p>$1,000,000.00</p>
+                        <button type="button">AGREGAR AL CARRITO</button>
+                    </div>
+                </article>
+            </div>
+            <div class="section2">
+                <article class="card-producto">
+                    <img src="./img/producto2.jpg" alt="img-p-2">
+                    <div>
+                        <h3>Producto 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione numquam architecto quisquam. Laudantium cum eius quod corporis, labore sequi, quibusdam.</p>
+                        <p>$1,000,000.00</p>
+                        <button type="button">AGREGAR AL CARRITO</button>
+                    </div>
+                </article>
+                <article class="card-producto">
+                    <img src="./img/producto3.jpg" alt="img-p-3">
+                    <div>
+                        <h3>Producto 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione numquam architecto quisquam. Laudantium cum eius quod corporis, labore sequi, quibusdam.</p>
+                        <p>$1,000,000.00</p>
+                        <button type="button">AGREGAR AL CARRITO</button>
+                    </div>
+                </article>
+            </div>
+            <div class="section3">
+                <article class="card-producto">
+                    <img src="./img/producto4.jpg" alt="img-p-4">
+                    <div>
+                        <h3>Producto 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione numquam architecto quisquam. Laudantium cum eius quod corporis, labore sequi, quibusdam.</p>
+                        <p>$1,000,000.00</p>
+                        <button type="button">AGREGAR AL CARRITO</button>
+                    </div>
+                </article>
+                <article class="card-producto">
+                    <img src="./img/producto5.jpg" alt="img-p-5">
+                    <div>
+                        <h3>Producto 5</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione numquam architecto quisquam. Laudantium cum eius quod corporis, labore sequi, quibusdam.</p>
+                        <p>$1,000,000.00</p>
+                        <button type="button">AGREGAR AL CARRITO</button>
+                    </div>
+                </article>
+                <article class="card-producto">
+                    <img src="./img/producto6.jpg" alt="img-p-6">
+                    <div>
+                        <h3>Producto 6</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ratione numquam architecto quisquam. Laudantium cum eius quod corporis, labore sequi, quibusdam.</p>
+                        <p>$1,000,000.00</p>
+                        <button type="button">AGREGAR AL CARRITO</button>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
+    <hr>
     <footer>
-        <div>
+        <div class="contenedor-navs">
             <div>
                 <h2>Categorías</h2>
-                <nav>
+                <nav class="navegacion nav-secundaria">
                     <ul>
                         <li><a href="#">Cocina</a></li>
                         <li><a href="#">Oficina</a></li>
@@ -112,7 +106,7 @@
             </div>
             <div>
                 <h2>Sobre Nosotros</h2>
-                <nav>
+                <nav class="navegacion nav-secundaria">
                     <ul>
                         <li><a href="#">Nuestra Historia</a></li>
                         <li><a href="#">Misión, Visión y Valores</a></li>
@@ -124,7 +118,7 @@
             </div>
             <div>
                 <h2>Soporte</h2>
-                <nav>
+                <nav class="navegacion nav-secundaria">
                     <ul>
                         <li><a href="#">Preguntas Frecuentes</a></li>
                         <li><a href="#">Ayuda en Línea</a></li>
@@ -136,5 +130,4 @@
         <p>Todos los derechos Reservados. TiendaMuebles</p>
     </footer>
 </body>
-
 </html>

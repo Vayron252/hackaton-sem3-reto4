@@ -1,0 +1,363 @@
+*,
+*::after,
+*::before {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+
+header {
+    margin-top: 6rem;
+}
+
+header span {
+    font-size: 5rem;
+    color: #037bc0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navegacion ul {
+    list-style: none;
+    font-size: 4rem;
+}
+
+.nav-principal ul {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 16rem;
+    margin: 0;
+    font-size: 4rem;
+    padding: 2rem 0;
+}
+
+.contenedor-imagen {
+    background-image: url(./img/principal.jpg);
+    width: 100%;
+    height: 500px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.seccion-categoria {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.contenedor-categorias {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.seccion-nosotros {
+    margin-top: 6rem;
+}
+
+.categoria {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.categoria h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.categoria:hover {
+    background-color: #037bc0;
+    color: white;
+}
+
+.seccion-nosotros {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 400px;
+}
+
+.contenedor-img-nosotros {
+    background-image: url(./img/nosotros.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+
+.contenido-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 7rem;
+    color: white;
+    background-color: #037bc0;
+}
+
+.contenido-nosotros p {
+    font-size: 1.5rem;
+}
+
+.seccion-nuestros-productos {
+    margin-top: 6rem;
+    text-align: center;
+    padding: 0 30rem;
+}
+
+.section1 article {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.section1 {
+    margin-bottom: 2rem;
+}
+
+.section2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card-producto div {
+    background-color: #037bc0;
+    color: white;
+    padding: 2rem;
+}
+
+.card-producto div h3 {
+    font-size: 3rem;
+}
+
+.card-producto div p {
+    font-size: 2rem;
+}
+
+.card-producto div button {
+    background-color: #8cbc00;
+    width: 100%;
+    height: 5rem;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+main {
+    margin-bottom: 5rem;
+}
+
+footer {
+    margin-top: 6rem;
+}
+
+.contenedor-navs {
+    display: flex;
+    justify-content: center;
+    gap: 22rem;
+}
+
+footer p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.section-nosotros {
+    text-align: center;
+    padding: 0 20rem;
+}
+
+.contenedor-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contenedor-nosotros p {
+    font-size: 1.5rem;
+    text-align: start;
+    padding-left: 2rem;
+    line-height: 4rem;
+}
+
+.contenedor-nosotros div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor-blog {
+    padding: 0 25rem;
+}
+
+.contenedor-blog h2 {
+    text-align: center;
+}
+
+.blog-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+
+.blog-content nav ul {
+    font-size: 4rem;
+}
+
+.blog-content article h2 {
+    text-align: start;
+}
+
+.blog-content article:nth-child(1) {
+    margin-bottom: 2rem;
+}
+
+.blog-content article .contenido, p {
+    font-size: 1.5rem;
+}
+
+.blog-content article .contenido {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.blog-content button {
+    background-color: #8cbc00;
+    width: 200px;
+    height: 5rem;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.blog-content span {
+    font-size: inherit;
+    color: #037bc0;
+}
+
+.contenedor-galeria {
+    text-align: center;
+    padding: 0 25rem;
+}
+
+.galeria-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.galeria-content img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.contenedor-contacto {
+    padding: 0 60rem;
+}
+
+.contenedor-contacto h2 {
+    text-align: center;
+}
+
+form {
+    font-size: 9rem;
+}
+
+form button {
+    background-color: #8cbc00;
+    width: 200px;
+    height: 4rem;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+form legend {
+    background-color: #0a5683;
+    text-align: center;
+    width: 90%;
+    color: white;
+    padding: .5rem;
+    font-weight: bold;
+}
+
+.item input {
+    padding: 1rem;
+    border: 1px solid gray;
+}
+
+form .section-tusdatos .item {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+form .section-tusdatos .item:last-child {
+    align-items: start;
+    margin-bottom: 0;
+}
+
+form .section-pais .item {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+}
+
+select {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+form .section-infextra .item {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    font-size: 2rem;
+}
+
+form .campo-check {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-items: start;
+}

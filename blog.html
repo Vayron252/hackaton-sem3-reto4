@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfairisplay:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Ecommerce - Blog</title>
 </head>
 <body>
     <header>
-        <h1>Tienda Muebles</h1>
-        <nav>
+        <h1>Tienda <span>Muebles</span></h1>
+        <hr>
+        <nav class="navegacion nav-principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
@@ -19,31 +24,32 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="contenedor-blog">
         <h2>Nuestro Blog</h2>
-        <div>
+        <div class="blog-content">
             <section>
                 <article>
                     <h2>Guía de Colores</h2>
                     <div>
                         <img src="./img/nosotros.jpg" alt="img-colors1">
                     </div>
-                    <div>
-                        <p>Fecha: 22 de Octubre de 2022</p>
-                        <p>Escrito por: TiendaMuebles</p>
+                    <div class="contenido">
+                        <p>Fecha: <span>22 de Octubre de 2022</span></p>
+                        <p>Escrito por: <span>TiendaMuebles</span></p>
                     </div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit rem eum, odit quasi ipsam provident alias. Aliquam nisi nobis libero ut fugit facilis, dolorem facere possimus ducimus autem illum!</p>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit rem eum, odit quasi ipsam provident alias. Aliquam nisi nobis libero ut fugit facilis, dolorem facere possimus ducimus autem illum!</p>
                     <button>LEER</button>
                 </article>
+                <hr>
                 <article>
                     <h2>Guía de Colores</h2>
                     <div>
                         <img src="./img/nosotros.jpg" alt="img-colors2">
                     </div>
-                    <div>
-                        <p>Fecha: 22 de Octubre de 2022</p>
-                        <p>Escrito por: TiendaMuebles</p>
+                    <div class="contenido">
+                        <p>Fecha: <span>22 de Octubre de 2022</span></p>
+                        <p>Escrito por: <span>TiendaMuebles</span></p>
                     </div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit rem eum, odit quasi ipsam provident alias. Aliquam nisi nobis libero ut fugit facilis, dolorem facere possimus ducimus autem illum!</p>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit rem eum, odit quasi ipsam provident alias. Aliquam nisi nobis libero ut fugit facilis, dolorem facere possimus ducimus autem illum!</p>
@@ -52,7 +58,7 @@
             </section>
             <section>
                 <h3>Otras Entradas de Blog</h3>
-                <nav>
+                <nav class="nav-aside">
                     <ul>
                         <li><a href="#">Guía de Colores</a></li>
                         <li><a href="#">Nuevos Modelos</a></li>
@@ -63,11 +69,12 @@
             </section>
         </div>
     </main>
+    <hr>
     <footer>
-        <div>
+        <div class="contenedor-navs">
             <div>
                 <h2>Categorías</h2>
-                <nav>
+                <nav class="navegacion nav-secundaria">
                     <ul>
                         <li><a href="#">Cocina</a></li>
                         <li><a href="#">Oficina</a></li>
@@ -79,7 +86,7 @@
             </div>
             <div>
                 <h2>Sobre Nosotros</h2>
-                <nav>
+                <nav class="navegacion nav-secundaria">
                     <ul>
                         <li><a href="#">Nuestra Historia</a></li>
                         <li><a href="#">Misión, Visión y Valores</a></li>
@@ -91,7 +98,7 @@
             </div>
             <div>
                 <h2>Soporte</h2>
-                <nav>
+                <nav class="navegacion nav-secundaria">
                     <ul>
                         <li><a href="#">Preguntas Frecuentes</a></li>
                         <li><a href="#">Ayuda en Línea</a></li>

@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfairisplay:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Ecommerce - Contacto</title>
 </head>
-
 <body>
     <header>
-        <h1>Tienda Muebles</h1>
-        <nav>
+        <h1>Tienda <span>Muebles</span></h1>
+        <hr>
+        <nav class="navegacion nav-principal">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
@@ -21,81 +24,84 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="contenedor-contacto">
         <form action="">
             <h2>Contacto</h2>
-            <section>
+            <section class="section-tusdatos">
                 <fieldset>
                     <legend>TUS DATOS</legend>
-                    <div>
+                    <div class="item">
                         <label for="txtNombre">Nombre:</label>
                         <input type="text" id="" placeholder="Tu Nombre">
                     </div>
-                    <div>
+                    <div class="item">
                         <label for="txtAsunto">Asunto:</label>
                         <input type="text" id="txtAsunto" placeholder="Tu Asunto">
                     </div>
-                    <div>
+                    <div class="item">
                         <label for="txtEmail">E-mail:</label>
                         <input type="email" id="txtEmail" placeholder="Tu Email">
                     </div>
-                    <div>
+                    <div class="item">
                         <label for="txtTelefono">Teléfono:</label>
                         <input type="number" id="txtTelefono" placeholder="Tu Teléfono">
                     </div>
-                    <div>
+                    <div class="item">
                         <label for="txtMensaje">Mensaje:</label>
                         <textarea id="txtMensaje" cols="30" rows="10"></textarea>
                     </div>
                 </fieldset>
             </section>
-            <section>
+            <section class="section-pais">
                 <fieldset>
                     <legend>PAÍS</legend>
-                    <label for="cboPais">País</label>
-                    <select name="" id="">
-                        <option value="">México</option>
-                        <option value="">Perú</option>
-                        <option value="">Colombia</option>
-                        <option value="">Argentina</option>
-                        <option value="">España</option>
-                        <option value="">Chile</option>
-                    </select>
+                    <div class="item">
+                        <label for="cboPais">País:</label>
+                        <select name="" id="">
+                            <option value="" selected>-- Seleccione --</option>
+                            <option value="">México</option>
+                            <option value="">Perú</option>
+                            <option value="">Colombia</option>
+                            <option value="">Argentina</option>
+                            <option value="">España</option>
+                            <option value="">Chile</option>
+                        </select>
+                    </div>
                 </fieldset>
             </section>
-            <section>
+            <section class="section-infextra">
                 <fieldset>
                     <legend>INFORMACIÓN EXTRA</legend>
-                    <div>
-                        <div>
-                            <label for="chkCliente">Cliente</label>
-                            <input type="radio" id="chkCliente" name="tipo">
-                        </div>
-                        <div>
-                            <label for="chkProveedor">Proveedor</label>
-                            <input type="radio" id="chkProveedor" name="tipo">
-                        </div>
-                        <div>
-                            <label for="">Categorías de Interés</label>
-                            <select name="" id="">
-                                <option value="">Cocina</option>
-                                <option value="">Exterior</option>
-                                <option value="">Recámaras</option>
-                                <option value="">Oficina</option>
-                                <option value="">Televisión</option>
-                            </select>
-                        </div>
+                    <div class="campo-check">
+                        <label for="chkCliente">Cliente</label>
+                        <input type="radio" id="chkCliente" name="tipo">
+                    </div>
+                    <div class="campo-check">
+                        <label for="chkProveedor">Proveedor</label>
+                        <input type="radio" id="chkProveedor" name="tipo">
+                    </div>
+                    <div class="item">
+                        <label for="">Categorías de Interés</label>
+                        <select name="" id="">
+                            <option value="" selected>-- Seleccione --</option>
+                            <option value="">Cocina</option>
+                            <option value="">Exterior</option>
+                            <option value="">Recámaras</option>
+                            <option value="">Oficina</option>
+                            <option value="">Televisión</option>
+                        </select>
                     </div>
                 </fieldset>
             </section>
             <button type="submit">ENVIAR FORMULARIO</button>
         </form>
     </main>
+    <hr>
     <footer>
-        <div>
+        <div class="contenedor-navs">
             <div>
                 <h2>Categorías</h2>
-                <nav>
+                <nav class="navegacion nav-secundaria">
                     <ul>
                         <li><a href="#">Cocina</a></li>
                         <li><a href="#">Oficina</a></li>
@@ -107,7 +113,7 @@
             </div>
             <div>
                 <h2>Sobre Nosotros</h2>
-                <nav>
+                <nav class="navegacion nav-secundaria">
                     <ul>
                         <li><a href="#">Nuestra Historia</a></li>
                         <li><a href="#">Misión, Visión y Valores</a></li>
@@ -119,7 +125,7 @@
             </div>
             <div>
                 <h2>Soporte</h2>
-                <nav>
+                <nav class="navegacion nav-secundaria">
                     <ul>
                         <li><a href="#">Preguntas Frecuentes</a></li>
                         <li><a href="#">Ayuda en Línea</a></li>
@@ -131,5 +137,4 @@
         <p>Todos los derechos Reservados. TiendaMuebles</p>
     </footer>
 </body>
-
 </html>
